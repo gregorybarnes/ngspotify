@@ -7,6 +7,7 @@ import id = webdriver.By.id;
 export class SpotifyService{
   private searchUrl: string;
   private artistUrl: string;
+  private albumsUrl: string;
 
   constructor(private _http: Http){
 
@@ -22,5 +23,11 @@ export class SpotifyService{
     //see Spotify API docs at https://developer.spotify.com/web-api/endpoint-reference
     this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
     return this._http.get(this.artistUrl).map(res => res.json());
+  }
+
+  getAlbums(artistId: string){
+    //see Spotify API docs at https://developer.spotify.com/web-api/endpoint-reference
+    this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + '/albums';
+    return this._http.get(this.albumsUrl).map(res => res.json());
   }
 }
