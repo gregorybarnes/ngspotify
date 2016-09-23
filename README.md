@@ -1,5 +1,7 @@
-# Angular QuickStart Source
+# Angular 2 Spotify App
 [![Build Status][travis-badge]][travis-badge-url]
+
+This is a simple Angular 2 app that allows a user to browse spotify music.  It was built using Spotify API as a learning project.
 
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
 the foundation for most of the documentation samples and potentially a good starting point for your application.
