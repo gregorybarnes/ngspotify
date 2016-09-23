@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   selector: 'search',
   templateUrl: 'search.component.html'
 })
-export class SearchComponent { }
+export class SearchComponent {
+  searchMusic(){
+    console.log('Test --searchMusic() function works!');
+  }
+}
